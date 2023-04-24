@@ -1,0 +1,188 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #003e52;
+    margin: 0;
+}
+
+/* ********************************navbar******************** */
+
+#hamburger {
+    visibility: hidden;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    background-color: white;
+}
+
+.logo {
+    width: 264px;
+}
+
+#menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+#menu li {
+    padding: 0 10px;
+}
+
+#menu a {
+    color: black;
+    text-decoration: none;
+}
+/* ******************************photo repas****************** */
+#repas {
+    background-image: url(../images/header-image.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 90vh;
+}
+
+/* ******************************photo bol épices**************** */
+#épices {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.intro {
+    flex-basis: 29%;
+    text-align: right;
+}
+
+/* *****************************photo 3 assiettes*************************** */
+#assiettes {
+    background-image: url(../images/images-slider.JPG);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 90vh;
+}
+
+/* *******************************menu signature**************************** */
+
+
+#signature {
+    display: flex;
+    flex-direction: column;
+    margin: 0 35vw;
+}
+
+#signature h2 {
+    font-weight: 900;
+    text-align: center;
+    border-bottom: #003e52 1px solid;
+    line-height: 4em;
+}
+
+i {
+    color: #CCD5D6;
+}
+
+h3 {
+    text-align: left;
+}
+
+table tr td {
+    padding-bottom: 10px;
+}
+
+#sushis {
+    background-image: url(../images/sushis.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 70vh;
+}
+
+/* *************************carte google************* */
+
+iframe {
+    display: flex;
+    width: 90vw;
+    height: 600px;
+    filter: grayscale();
+    padding: 10px 5%
+}
+
+/* *************************contact****************** */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #003e52;
+    width: 100vw;
+    height: 250px;
+}
+
+footer ul {
+    color: white;
+    list-style-type: none;
+    text-align: center;
+}
+
+/* **********************media queries téléphones + tablettes****************** */
+
+@media screen and (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        z-index: 1;
+    }
+}
+
+
+/* *************************media queries téléphones************************** */
+
+@media screen and (max-width: 576px) {
+    #hamburger {
+        color: black;
+        visibility: visible;
+    }
+
+    #menu {
+        display: none;
+        text-align: center;
+        padding: 0;
+    }
+
+    #menu li {
+        line-height: 2em;
+        font-weight: bold;
+
+    }
+
+    #épices {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    #épices img{
+        width: 100vw;
+        margin: 0 auto;
+    }
+
+    #signature{
+        margin: 0 10vw;
+    }
+
+    iframe{
+        padding: 10px 0;
+        width: 100vw;
+    }
+
+}
